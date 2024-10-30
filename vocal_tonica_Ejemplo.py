@@ -61,35 +61,35 @@ from fonetica3.vocal_tonica import vocal_tonica
 #############################################################################################
 #Ejemplos de uso
 
-print vocal_tonica("palabra")
+print(vocal_tonica("palabra"))
 
-print vocal_tonica("acción")
+print(vocal_tonica("acción"))
 
-print vocal_tonica("perro")
+print(vocal_tonica("perro"))
 
-print vocal_tonica("excelente")
+print(vocal_tonica("excelente"))
 
-print vocal_tonica("examen")
+print(vocal_tonica("examen"))
 
-print vocal_tonica("peña")
+print(vocal_tonica("peña"))
 
-print vocal_tonica("ñoño")
+print(vocal_tonica("ñoño"))
 
-print vocal_tonica("debidamente")
+print(vocal_tonica("debidamente"))
 
-print vocal_tonica("mente")
+print(vocal_tonica("mente"))
 
-print vocal_tonica("débilmente")
+print(vocal_tonica("débilmente"))
 
-print vocal_tonica("cancion")
-print vocal_tonica("prision")
-print vocal_tonica("soltaron")
-print vocal_tonica("comentaron")
+print(vocal_tonica("cancion"))
+print(vocal_tonica("prision"))
+print(vocal_tonica("soltaron"))
+print(vocal_tonica("comentaron"))
 
-print vocal_tonica("teorIas")
-print vocal_tonica("quiero")
+print(vocal_tonica("teorIas"))
+print(vocal_tonica("quiero"))
 
-print vocal_tonica("itsmo")
+print(vocal_tonica("itsmo"))
 
 
 

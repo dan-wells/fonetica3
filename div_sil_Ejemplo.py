@@ -60,25 +60,25 @@ from fonetica3.div_sil import div_sil
 #############################################################################################
 #Ejemplos de uso
 
-print div_sil("palabra")
+print(div_sil("palabra"))
 
-print div_sil("acción")
+print(div_sil("acción"))
 
-print div_sil("perro")
+print(div_sil("perro"))
 
-print div_sil("excelente")
+print(div_sil("excelente"))
 
-print div_sil("examen")
+print(div_sil("examen"))
 
-print div_sil("peña")
+print(div_sil("peña"))
 
-print div_sil("río")
+print(div_sil("río"))
 
-print div_sil("lingüística")
+print(div_sil("lingüística"))
 
-print div_sil("buey")
+print(div_sil("buey"))
 
-print div_sil("huía")
+print(div_sil("huía"))
 
 
 

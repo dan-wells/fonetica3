@@ -61,38 +61,38 @@ from fonetica3.T29 import T29
 #############################################################################################
 #Ejemplos de uso
 
-print T29("palabra")
+print(T29("palabra"))
 
-print T29("acción")
+print(T29("acción"))
 
-print T29("pErro")
+print(T29("pErro"))
 
-print T29("excelEnte")
+print(T29("excelEnte"))
 
-print T29("exámen")
+print(T29("exámen"))
 
-print T29("peña")
+print(T29("peña"))
 
-print T29("ñoño")
+print(T29("ñoño"))
 
-print T29("$ilOfono") 
+print(T29("$ilOfono")) 
 
-print T29("camagWei")
+print(T29("camagWei"))
 
-print T29("escena")
+print(T29("escena"))
 
-print T29("escisiOn")
+print(T29("escisiOn"))
 
-print T29("itzcOatl")
+print(T29("itzcOatl"))
 
-print T29("itsmo")
+print(T29("itsmo"))
 
 
-print T29("huitzilihuitl")
+print(T29("huitzilihuitl"))
 
-print T29("tlAhuac")
+print(T29("tlAhuac"))
 
-print T29("show")
+print(T29("show"))
 
 
 

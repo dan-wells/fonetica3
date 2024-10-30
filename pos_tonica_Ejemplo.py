@@ -70,23 +70,23 @@ from fonetica3.num_sil import num_sil
 from fonetica3.pos_tonica import pos_tonica
 #############################################################################################
 
-print pos_tonica("salomé")
+print(pos_tonica("salomé"))
 
-print pos_tonica("sí")
+print(pos_tonica("sí"))
 
-print pos_tonica("cAsa")
+print(pos_tonica("cAsa"))
 
-print pos_tonica("excEso")
+print(pos_tonica("excEso"))
 
-print pos_tonica("ambulAncia")
+print(pos_tonica("ambulAncia"))
 
-print pos_tonica("esdrújula")
+print(pos_tonica("esdrújula"))
 
-print pos_tonica("clAramente")
+print(pos_tonica("clAramente"))
 
-print pos_tonica("rapidísimamEnte")
+print(pos_tonica("rapidísimamEnte"))
 
-print pos_tonica("clAramEnte")
+print(pos_tonica("clAramEnte"))
 
 
 #############################################################################################

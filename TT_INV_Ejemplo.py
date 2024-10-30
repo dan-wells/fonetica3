@@ -65,33 +65,33 @@ from fonetica3.TT_INV import TT_INV
 #Ejemplos de uso
 
 
-print TT("palabra")
-print TT_INV("palabra")
+print(TT("palabra"))
+print(TT_INV("palabra"))
 
-print TT("acción")
-print TT_INV("ac5iOn")
+print(TT("acción"))
+print(TT_INV("ac5iOn"))
 
-print TT("perro")
-print TT_INV("peRo")
+print(TT("perro"))
+print(TT_INV("peRo"))
 
-print TT("excelente")
-print TT_INV("ex5elente")
+print(TT("excelente"))
+print(TT_INV("ex5elente"))
 
-print TT("examen")
-print TT_INV("examen")
+print(TT("examen"))
+print(TT_INV("examen"))
 
-print TT("peña")
-print TT_INV("peNa")
+print(TT("peña"))
+print(TT_INV("peNa"))
 
-print TT("ñoño")
-print TT_INV("NoNo")
+print(TT("ñoño"))
+print(TT_INV("NoNo"))
 
 
-print TT("itsmo")
-print TT_INV("i2mo")
+print(TT("itsmo"))
+print(TT_INV("i2mo"))
 
-print TT("itzcoátl")
-print TT_INV("i3coAT")
+print(TT("itzcoátl"))
+print(TT_INV("i3coAT"))
 
 
 

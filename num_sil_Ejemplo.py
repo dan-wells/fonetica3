@@ -56,17 +56,17 @@ from fonetica3.num_sil import num_sil
 #############################################################################################
 #Ejemplos de uso
 
-print num_sil("palabra")
+print(num_sil("palabra"))
 
-print num_sil("acción")
+print(num_sil("acción"))
 
-print num_sil("perro")
+print(num_sil("perro"))
 
-print num_sil("excelente")
+print(num_sil("excelente"))
 
-print num_sil("examen")
+print(num_sil("examen"))
 
-print num_sil("peña")
+print(num_sil("peña"))
 
 
 

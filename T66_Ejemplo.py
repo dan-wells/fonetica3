@@ -61,25 +61,25 @@ from fonetica3.T66 import T66
 #############################################################################################
 #Ejemplos de uso
 
-print T66("palabra")
+print(T66("palabra"))
 
-print T66("acción")
+print(T66("acción"))
 
-print T66("pErro")
+print(T66("pErro"))
 
-print T66("excelEnte")
+print(T66("excelEnte"))
 
-print T66("exámen")
+print(T66("exámen"))
 
-print T66("pEña")
+print(T66("pEña"))
 
-print T66("ñoño")
+print(T66("ñoño"))
 
-print T66("itzcOatl")
+print(T66("itzcOatl"))
 
-print T66("iztaccíhuatl")
+print(T66("iztaccíhuatl"))
 
-print T66("SOlos")
+print(T66("SOlos"))
 
 
 

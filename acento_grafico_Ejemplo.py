@@ -66,29 +66,29 @@ from fonetica3.acento_grafico import acento_grafico
 #############################################################################################
 #Ejemplos de uso
 
-print acento_grafico("lingüIstica")
+print(acento_grafico("lingüIstica"))
 
-print acento_grafico("canciOn")
+print(acento_grafico("canciOn"))
 
-print acento_grafico("dEbilmEnte")
+print(acento_grafico("dEbilmEnte"))
 
-print acento_grafico("dEbil")
+print(acento_grafico("dEbil"))
 
-print acento_grafico("mente")
+print(acento_grafico("mente"))
 
-print acento_grafico("cInica")
+print(acento_grafico("cInica"))
 
-print acento_grafico("cInicamente")
+print(acento_grafico("cInicamente"))
 
-print acento_grafico("fomentE")
+print(acento_grafico("fomentE"))
 
-print acento_grafico("fomEnte")
+print(acento_grafico("fomEnte"))
 
-print acento_grafico("argumEnte")
-print acento_grafico("argumentE")
+print(acento_grafico("argumEnte"))
+print(acento_grafico("argumentE"))
 
-print acento_grafico("sEria")
-print acento_grafico("serIa")
+print(acento_grafico("sEria"))
+print(acento_grafico("serIa"))
 
 
 

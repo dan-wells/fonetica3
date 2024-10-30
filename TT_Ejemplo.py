@@ -59,25 +59,25 @@ from fonetica3.TT import TT
 #############################################################################################
 #Ejemplos de uso
 
-print TT("palabra")
+print(TT("palabra"))
 
-print TT("acción")
+print(TT("acción"))
 
-print TT("pErro")
+print(TT("pErro"))
 
-print TT("excelEnte")
+print(TT("excelEnte"))
 
-print TT("exámen")
+print(TT("exámen"))
 
-print TT("pEña")
+print(TT("pEña"))
 
-print TT("ñoño")
+print(TT("ñoño"))
 
-print TT("papalotl")
+print(TT("papalotl"))
 
-print TT("itsmo")
+print(TT("itsmo"))
 
-print TT("itzcoátl")
+print(TT("itzcoátl"))
 
 
 

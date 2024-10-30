@@ -59,19 +59,19 @@ from fonetica3.patron_sil import patron_sil
 #############################################################################################
 #Ejemplos de uso
 
-print patron_sil("palabra")
+print(patron_sil("palabra"))
 
-print patron_sil("acción")
+print(patron_sil("acción"))
 
-print patron_sil("perro")
+print(patron_sil("perro"))
 
-print patron_sil("excelente")
+print(patron_sil("excelente"))
 
-print patron_sil("examen")
+print(patron_sil("examen"))
 
-print patron_sil("peña")
+print(patron_sil("peña"))
 
-print patron_sil("casa")
+print(patron_sil("casa"))
 
 
 
