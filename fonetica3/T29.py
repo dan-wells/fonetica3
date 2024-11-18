@@ -284,8 +284,110 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	texto_tt = texto_tt.replace("#i#","i_7")
 	texto_tt = texto_tt.replace("#","")
 
+	################
+	#Begin T66 rules
+	################
+
+	#Delimitar la la palabra
+	fonetizada = "#. "+ texto_tt + " .#"
+
+	##############
+	#Fonema /b/
+	##############
+
+	#Es mas facil sustituir le fonema por su alofono
+
+	fonetizada = fonetizada.replace("b","V")
+
+	#b
+	#Inicial absoluto, despues de pausa y despues de nasal, permanese oclusivo
+	
+	fonetizada = fonetizada.replace("#. V","#. b")
+
+	#Despues de nasal
+	fonetizada = fonetizada.replace("m . V","m . b")
+	fonetizada = fonetizada.replace("n . V","n . b")
+	fonetizada = fonetizada.replace("n~ . V","n~ . b")
+
+	fonetizada = fonetizada.replace("m V","m b")
+	fonetizada = fonetizada.replace("n V","n b")
+	fonetizada = fonetizada.replace("n~ V","n~ b")
+
+	#V
+	#Se presenta fricatiado (aproximante) en todos los demas contextos
+
+	##############
+	#Fonema /d/
+	##############
+
+	#Es mas facil sustituir le fonema por su alofono
+	fonetizada = fonetizada.replace("d","D")
+
+	#d
+
+	#Inicial absoluto, despues de pausa, despues de nasal y de /l/,
+	#permanece oclusivo
+
+	fonetizada = fonetizada.replace("#. D","#. d")
+
+	#Despues de nasal
+
+	fonetizada = fonetizada.replace("m . D","m . d")
+	fonetizada = fonetizada.replace("n . D","n . d")
+	fonetizada = fonetizada.replace("n~ . D","n~ . d")
+
+	fonetizada = fonetizada.replace("m D","m d")
+	fonetizada = fonetizada.replace("n D","n d")
+	fonetizada = fonetizada.replace("n~ D","n~ d")
+
+	#Despues de /l/
+
+	fonetizada = fonetizada.replace("l . D","l . d")
+	fonetizada = fonetizada.replace("l D","l d")
+	
+	#D
+
+	#Se presenta fricatizado (aproximante) en todos
+	#los demas contextos
+
+	##############
+	#Fonema /g/
+	##############
+	
+	#Es mas facil sustituir el fonema por su alofono
+	fonetizada = fonetizada.replace("g","G")
+
+	#g
+	#Inicial absoluto, despues de pausa, y despues de nasal
+	#permanece oclusivo
+
+	fonetizada = fonetizada.replace("#. G","#. g")
+	
+	#Despues de nasal
+	
+	fonetizada = fonetizada.replace("m . G","m . g")
+	fonetizada = fonetizada.replace("n . G","n . g")
+	fonetizada = fonetizada.replace("n~ . G","n~ . g")
+
+	fonetizada = fonetizada.replace("m G","m g")
+	fonetizada = fonetizada.replace("n G","n g")
+	fonetizada = fonetizada.replace("n~ G","n~ g")
+
+	#G
+	#En todos los demás contextos se presenta fricativo
+	#(o aproximante)
+
+	######################################################
+
+	#Quitar los espacios en blanco extras
+	fonetizada=re.sub(r'\s+',' ',fonetizada)
+
+	#Quitar los delimitadores de inicio y fin 
+	fonetizada = fonetizada.replace("#. ","")
+	fonetizada = fonetizada.replace(" .#","")
+	
 	#Entrega la transcripcion final
-	return texto_tt
+	return fonetizada
 
 #ENDIF
 
