@@ -75,7 +75,7 @@ from fonetica3.div_sil import div_sil
 #FUNCION PRINCIPAL T22()
 #############################################################################################
 
-def T29(palabra_in, distincion=False):
+def T29(palabra_in, distincion=False, yeismo=True):
 
 	#NOTA: La palabra de entrada no debe contener salto de linea
 
@@ -217,7 +217,11 @@ def T29(palabra_in, distincion=False):
 	texto_tt = texto_tt.replace("J"," x ") #<---
 
 	texto_tt = texto_tt.replace("y"," Z ")
-	texto_tt = texto_tt.replace("L"," Z ")
+
+	if yeismo:
+		texto_tt = texto_tt.replace("L"," Z ")
+	else:
+		texto_tt = texto_tt.replace("L"," L ")
 
 	texto_tt = texto_tt.replace("m"," m ")
 
