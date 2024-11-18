@@ -75,7 +75,7 @@ from fonetica3.div_sil import div_sil
 #FUNCION PRINCIPAL T22()
 #############################################################################################
 
-def T29(palabra_in):
+def T29(palabra_in, distincion=False):
 
 	#NOTA: La palabra de entrada no debe contener salto de linea
 
@@ -124,8 +124,12 @@ def T29(palabra_in):
 	#La "b" y la "v"
 	palabra_in = palabra_in.replace("v","b")
 
+    # TODO: removing "z" here blocks "zz" rules in TT()
 	#la "z" y la "s"
-	palabra_in = palabra_in.replace("z","s")
+	if distincion:
+		palabra_in = palabra_in.replace("z","5")
+	else:
+		palabra_in = palabra_in.replace("z","s")
 
 	#Antes de dividir en silabas trata el caso de la 
 	#vibrante multiple en posicion inicial de palabra.
@@ -196,8 +200,12 @@ def T29(palabra_in):
 
 	texto_tt = texto_tt.replace("f"," f ")
 
+	if distincion:
+		texto_tt = texto_tt.replace("5"," th ")
+	else:
+		texto_tt = texto_tt.replace("5"," s ")
+
 	texto_tt = texto_tt.replace("s"," s ")
-	texto_tt = texto_tt.replace("5"," s ")
 	texto_tt = texto_tt.replace("P"," s ")
 	texto_tt = texto_tt.replace("$"," s ") #<---
 
