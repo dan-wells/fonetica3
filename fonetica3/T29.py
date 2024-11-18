@@ -124,7 +124,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	#La "b" y la "v"
 	palabra_in = palabra_in.replace("v","b")
 
-    # TODO: removing "z" here blocks "zz" rules in TT()
+	# TODO: removing "z" here blocks "zz" rules in TT()
 	#la "z" y la "s"
 	if distincion:
 		palabra_in = palabra_in.replace("z","5")
@@ -301,7 +301,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 
 	#b
 	#Inicial absoluto, despues de pausa y despues de nasal, permanese oclusivo
-	
+
 	fonetizada = fonetizada.replace("#. V","#. b")
 
 	#Despues de nasal
@@ -344,7 +344,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 
 	fonetizada = fonetizada.replace("l . D","l . d")
 	fonetizada = fonetizada.replace("l D","l d")
-	
+
 	#D
 
 	#Se presenta fricatizado (aproximante) en todos
@@ -353,7 +353,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	##############
 	#Fonema /g/
 	##############
-	
+
 	#Es mas facil sustituir el fonema por su alofono
 	fonetizada = fonetizada.replace("g","G")
 
@@ -362,9 +362,9 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	#permanece oclusivo
 
 	fonetizada = fonetizada.replace("#. G","#. g")
-	
+
 	#Despues de nasal
-	
+
 	fonetizada = fonetizada.replace("m . G","m . g")
 	fonetizada = fonetizada.replace("n . G","n . g")
 	fonetizada = fonetizada.replace("n~ . G","n~ . g")
@@ -394,7 +394,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	fonetizada = fonetizada.replace("n V","m V")
 	fonetizada = fonetizada.replace("n m","m m")
 
-    # also labiodental
+	# also labiodental
 	fonetizada = fonetizada.replace("n . f","m . f")
 	fonetizada = fonetizada.replace("n f","m f")
 
@@ -419,10 +419,10 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	#Quitar los espacios en blanco extras
 	fonetizada=re.sub(r'\s+',' ',fonetizada)
 
-	#Quitar los delimitadores de inicio y fin 
+	#Quitar los delimitadores de inicio y fin
 	fonetizada = fonetizada.replace("#. ","")
 	fonetizada = fonetizada.replace(" .#","")
-	
+
 	#Entrega la transcripcion final
 	return fonetizada
 
