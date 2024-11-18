@@ -377,6 +377,43 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	#En todos los demás contextos se presenta fricativo
 	#(o aproximante)
 
+	##############
+	#Fonema /n/
+	##############
+
+	#m
+	#Ante labial, se labializa
+
+	fonetizada = fonetizada.replace("n . p","m . p")
+	fonetizada = fonetizada.replace("n . b","m . b")
+	fonetizada = fonetizada.replace("n . V","m . V")
+	fonetizada = fonetizada.replace("n . m","m . m")
+
+	fonetizada = fonetizada.replace("n p","m p")
+	fonetizada = fonetizada.replace("n b","m b")
+	fonetizada = fonetizada.replace("n V","m V")
+	fonetizada = fonetizada.replace("n m","m m")
+
+    # also labiodental
+	fonetizada = fonetizada.replace("n . f","m . f")
+	fonetizada = fonetizada.replace("n f","m f")
+
+	#N
+	#Ante velar,  se velariza
+
+	fonetizada = fonetizada.replace("n . k","N . k")
+	fonetizada = fonetizada.replace("n . g","N . g")
+	fonetizada = fonetizada.replace("n . G","N . G")
+	fonetizada = fonetizada.replace("n . x","N . x")
+
+	fonetizada = fonetizada.replace("n k","N k")
+	fonetizada = fonetizada.replace("n g","N g")
+	fonetizada = fonetizada.replace("n G","N G")
+	fonetizada = fonetizada.replace("n x","N x")
+
+	#n
+	#Inicial sin condicion
+
 	######################################################
 
 	#Quitar los espacios en blanco extras
