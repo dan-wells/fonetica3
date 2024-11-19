@@ -175,6 +175,7 @@ def T29(palabra_in, distincion=False, yeismo=True):
 	#Grupo de fonemas ts y tz
 	texto_tt = texto_tt.replace("2"," t s ")
 	
+	# TODO: should <hiV> -> /J V/? e.g. "hielo" -> J E1 L O
 	#La "h" es muda
 	texto_tt = texto_tt.replace("h","")
 
