@@ -1,4 +1,27 @@
 #############################################################################################
+Changes by Dan Wells
+#############################################################################################
+
+Added flags to T29() for two dialectal features which together characterise some major
+differences between Latin American and Peninsular Spanish:
+
+- distincion : whether to pronounce both /th/ and /s/ (distincion=True, Peninsular) or to
+               merge both sounds to /s/ (distincion=False, Latin American)
+- yeismo : whether to pronounce both /L/ and /Z/ (yeismo=False, Peninsular) or to merge
+           both sounds to /L/ (yeismo=True, Latin American)
+
+Default behaviour gives Latin American output, i.e. T29(word, distincion=False, yeismo=True).
+For Peninsular Spanish, run T29(word, distincion=True, yeismo=False).
+
+Also added rules from T66() to T29() for two other features:
+
+- lenition of voiced stops, i.e. contextually-determined variants of /b, d, g/ -> /B, D, G/
+- nasal assimilation, i.e. contextually-determined variants of /n/ -> /n, m, N/
+
+These rules are applied by default, with no flags to control.
+
+
+#############################################################################################
 #fonetica3 library provide functions to make phonetic and phonological transcriptions of 
 #words in Spanish
 
